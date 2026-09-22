@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hermann Pauwells Rivera — CV (C++ / Audio)</title>
+<meta name="description" content="Software Engineer | C++ · Audio/DSP. Software engineer especializado en C++ y audio/DSP (JUCE), con experiencia full-stack en TypeScript, React/Next.js y…" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<meta name="author" content="Hermann Pauwells Rivera" />
+<link rel="canonical" href="https://hermannpr.github.io/cv/cpp-audio.html" />
+<link rel="alternate" hreflang="es" href="https://hermannpr.github.io/cv/cpp-audio.html" />
+<link rel="alternate" hreflang="en" href="https://hermannpr.github.io/cv/en-cpp-audio.html" />
+<link rel="alternate" hreflang="x-default" href="https://hermannpr.github.io/cv/cpp-audio.html" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Hermann Pauwells Rivera — CV (C++ / Audio)" />
+<meta property="og:description" content="Software Engineer | C++ · Audio/DSP. Software engineer especializado en C++ y audio/DSP (JUCE), con experiencia full-stack en TypeScript, React/Next.js y…" />
+<meta property="og:url" content="https://hermannpr.github.io/cv/cpp-audio.html" />
+<meta property="og:locale" content="es_MX" />
+<meta property="og:image" content="https://hermannpr.github.io/files/preview-cpp-audio.png" />
+<meta name="twitter:card" content="summary" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hermann Pauwells Rivera",
+  "jobTitle": "Software Engineer | C++ · Audio/DSP",
+  "email": "mailto:hermann.pauwells.rivera@gmail.com",
+  "url": "https://hermannpr.github.io/cv/cpp-audio.html",
+  "sameAs": [
+    "https://github.com/HermannPR",
+    "https://www.linkedin.com/in/hermann-pauwells-rivera"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Tecnológico de Monterrey, Campus Monterrey"
+  },
+  "knowsAbout": [
+    "C++",
+    "Python",
+    "TypeScript/JavaScript",
+    "SQL",
+    "Swift",
+    "C#",
+    "JUCE",
+    "VST3",
+    "DSP",
+    "CMake",
+    "pluginval",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Express",
+    "Supabase",
+    "Git",
+    "GitHub",
+    "GitHub Actions",
+    "CI",
+    "Unity"
+  ],
+  "knowsLanguage": [
+    "Español",
+    "Inglés"
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #16181d;
+    --strong: #101318;
+    --muted: #565b66;
+    --accent: #2f5d63;
+    --rule: #e2e5ea;
+    --award: #a06a12;
+    --chip: #f2f4f6;
+    --chip-fg: #2b3038;
+    /* Solid accent surfaces carry white text, so they need their own token:
+       --accent is tuned for text on the page background and goes light in dark
+       mode, where white-on-accent would land near 2:1. */
+    --btn: #2f5d63;
+    --btn-fg: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1216;
+      --fg: #e6e9ee;
+      --strong: #ffffff;
+      --muted: #9aa2ae;
+      --accent: #7db4ba;
+      --rule: #262c35;
+      --award: #d9a441;
+      --chip: #1a2027;
+      --chip-fg: #d5dae1;
+      --btn: #3d757d;
+      --btn-fg: #ffffff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .page { max-width: 52rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  a { color: var(--accent); }
+  h1 {
+    font-size: clamp(1.7rem, 5vw, 2.3rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--strong);
+    margin: 0;
+  }
+  .headline { margin: 0.35rem 0 0; font-weight: 600; color: var(--accent); font-size: 1.02rem; }
+  .contact { margin: 0.6rem 0 0; color: var(--muted); font-size: 0.95rem; }
+  .contact a { color: var(--accent); text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+
+  .nav { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin-top: 1.25rem; }
+  .chip {
+    display: inline-block; padding: 0.3rem 0.7rem; border-radius: 999px;
+    background: var(--chip); color: var(--chip-fg); text-decoration: none;
+    font-size: 0.85rem; font-weight: 600; border: 1px solid transparent;
+  }
+  .chip:hover { border-color: var(--accent); }
+  .chip[aria-current="page"] { background: var(--btn); color: var(--btn-fg); }
+  .pdf {
+    display: inline-block; margin-left: 0.15rem; padding: 0.35rem 0.9rem; border-radius: 999px;
+    background: var(--btn); color: var(--btn-fg); text-decoration: none; font-size: 0.85rem; font-weight: 700;
+  }
+  .pdf:hover { filter: brightness(1.08); }
+
+  .sec { margin-top: 2rem; }
+  .sec > h2 {
+    font-size: 0.76rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.09em;
+    color: var(--accent); margin: 0 0 0.7rem; padding-bottom: 0.35rem; border-bottom: 1px solid var(--rule);
+  }
+  .sec p { margin: 0; }
+  ul { margin: 0.4rem 0 0; padding-left: 1.15rem; }
+  li { margin-bottom: 0.3rem; }
+  li::marker { color: var(--muted); }
+
+  ul.skills { list-style: none; padding: 0; margin: 0; }
+  ul.skills li { margin-bottom: 0.35rem; }
+  ul.skills b { color: var(--strong); }
+
+  .item { margin-bottom: 1.1rem; }
+  .item:last-child { margin-bottom: 0; }
+  .itemhead { display: flex; flex-wrap: wrap; gap: 0.15rem 0.6rem; align-items: baseline; }
+  .itemhead h3 { margin: 0; font-size: 1.02rem; color: var(--strong); }
+  .itemhead .meta { color: var(--muted); font-weight: 500; font-size: 0.92rem; }
+  .itemhead .dates { margin-left: auto; color: var(--muted); font-size: 0.86rem; font-variant-numeric: tabular-nums; }
+  .award { color: var(--award); font-weight: 600; font-size: 0.9rem; margin-top: 0.15rem; }
+  .links { font-size: 0.86rem; margin-top: 0.25rem; }
+  .links a { margin-right: 0.75rem; }
+  .other { font-size: 0.9rem; color: var(--muted); margin-top: 0.7rem; }
+
+  .foot { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.82rem; }
+  .foot p { margin: 0 0 0.35rem; }
+  .foot a { color: var(--muted); }
+
+  @media print {
+    .nav, .foot .pdflist { display: none; }
+    .page { max-width: none; padding: 0; }
+    body { font-size: 10.5pt; }
+    .item { break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <h1>Hermann Pauwells Rivera</h1>
+    <p class="headline">Software Engineer | C++ · Audio/DSP</p>
+    <p class="contact"><a href="mailto:hermann.pauwells.rivera@gmail.com">hermann.pauwells.rivera@gmail.com</a> · <a href="https://www.linkedin.com/in/hermann-pauwells-rivera">linkedin.com/in/hermann-pauwells-rivera</a> · <a href="https://github.com/HermannPR">github.com/HermannPR</a></p>
+    <nav class="nav" aria-label="Versiones del CV">
+      <a class="chip" href="../index.html">Full-Stack</a>
+      <a class="chip" href="cpp-audio.html" aria-current="page">C++ / Audio</a>
+      <a class="chip" href="ai-ml.html">AI / ML</a>
+      <a class="chip" href="en-fullstack.html">Full-Stack (EN)</a>
+      <a class="chip" href="en-cpp-audio.html">C++ / Audio (EN)</a>
+      <a class="chip" href="en-ai-ml.html">AI / ML (EN)</a>
+      <a class="pdf" href="../files/CV_Hermann_Pauwells_CPP_Audio.pdf">Descargar PDF</a>
+    </nav>
+  </header>
+  <section class="sec">
+  <h2>Perfil</h2>
+  <p>Software engineer especializado en C++ y audio/DSP (JUCE), con experiencia full-stack en TypeScript, React/Next.js y Node.js, próximo a graduarse de Ingeniería en Tecnologías Computacionales en el Tecnológico de Monterrey. He construido un sintetizador VST3 con pruebas automatizadas y software para negocios reales (comercio electrónico, reservas en tiempo real). También trabajo con machine learning.</p>
+</section>
+<section class="sec">
+  <h2>Habilidades técnicas</h2>
+  <ul class="skills">
+    <li><b>Lenguajes:</b> C++, Python, TypeScript/JavaScript, SQL, Swift, C#</li>
+    <li><b>Audio/nativo:</b> JUCE, VST3, DSP, CMake, pluginval</li>
+    <li><b>Web:</b> React, Next.js, Node.js, Express, Supabase</li>
+    <li><b>Herramientas:</b> Git, GitHub, GitHub Actions, CI, Unity</li>
+  </ul>
+</section>
+<section class="sec">
+  <h2>Experiencia</h2>
+  <article class="item">
+    <div class="itemhead"><h3>Desarrollador Full-Stack — Juguetería El Arbolito</h3><span class="dates">2026–presente</span></div>
+    <ul>
+      <li>Desarrollo e implementación de una plataforma de e-commerce y administración para un negocio minorista de una sucursal (catálogo, carrito, checkout y backend).</li>
+      <li>Pagos con Mercado Pago y sincronización de inventario entre ventas online y punto de venta (local y en línea).</li>
+    </ul>
+  </article>
+</section>
+<section class="sec">
+  <h2>Proyectos seleccionados</h2>
+  <article class="item">
+    <div class="itemhead"><h3>folk-park</h3><span class="meta">Proyecto propio</span><span class="dates">2026</span></div>
+    <ul>
+      <li>Sintetizador wavetable VST3/Standalone en C++20 y JUCE; generación determinista de MIDI y arquitectura DSP en tiempo real.</li>
+      <li>Suites automatizadas (16/16 suites, 19/19 contratos de UI) y validación con pluginval strictness 5.</li>
+    </ul>
+    <p class="links"><a href="https://github.com/HermannPR/folk-park">Repositorio</a></p>
+  </article>
+  <article class="item">
+    <div class="itemhead"><h3>Lumina Reservations (WorkHub MTY)</h3><span class="meta">Proyecto académico en equipo · backend Node/Express, tiempo real (SSE) y frontend</span><span class="dates">2026</span></div>
+    <ul>
+      <li>Implementé el backend de reservas en Node/Express (servicios, repositorios, controladores, migraciones) y la actualización de ocupación en tiempo real por SSE.</li>
+      <li>Desarrollé el mapa de piso y el flujo de reservas en React/Vite (dashboard, filtros, confirmación) con control de roles.</li>
+    </ul>
+    <p class="links"><a href="https://work-hub-mty-six.vercel.app/login">Demo</a></p>
+  </article>
+  <article class="item">
+    <div class="itemhead"><h3>HeatShield</h3><span class="meta">App iOS</span><span class="dates">2025</span></div>
+    <div class="award">Ganador categoría Sostenibilidad, Swift Challenge Fest 2025 (Tecnológico de Monterrey)</div>
+    <ul>
+      <li>App iOS con alertas de calor en tiempo real (OpenWeatherMap), índice de calor y mapas de refugios.</li>
+    </ul>
+  </article>
+  <p class="other">Otros proyectos: Reto CrediFiel (Datathon 2025) · Simulación multiagente de bodega (RL) · MAWI · VisualControl (IoT) · Mildred Pierce · GateGenius (HackMTY 2025).</p>
+</section>
+<section class="sec">
+  <h2>Educación</h2>
+  <article class="item">
+    <div class="itemhead"><h3>Ingeniería en Tecnologías Computacionales (ITC)</h3><span class="meta">Tecnológico de Monterrey, Campus Monterrey</span><span class="dates">2021–2026</span></div>
+    <p class="other">Graduación prevista: diciembre 2026</p>
+  </article>
+</section>
+<section class="sec">
+  <h2>Actividades</h2>
+  <ul>
+    <li>SwiftTec Coding Community (2025) — hackathones y retos de innovación.</li>
+    <li>Producción musical y diseño de sonido (FL Studio).</li>
+  </ul>
+  <p class="other">Español — nativo · Inglés — C1</p>
+</section>
+  <footer class="foot">
+    <p>Actualizado: septiembre 2026</p>
+    <p class="pdflist">PDF: <a href="../files/CV_Hermann_Pauwells_FullStack.pdf">Full-Stack</a> · <a href="../files/CV_Hermann_Pauwells_CPP_Audio.pdf">C++ / Audio</a> · <a href="../files/CV_Hermann_Pauwells_AI_ML.pdf">AI / ML</a> · <a href="../files/CV_Hermann_Pauwells_FullStack_EN.pdf">Full-Stack (EN)</a> · <a href="../files/CV_Hermann_Pauwells_CPP_Audio_EN.pdf">C++ / Audio (EN)</a> · <a href="../files/CV_Hermann_Pauwells_AI_ML_EN.pdf">AI / ML (EN)</a></p>
+  </footer>
+</main>
+</body>
+</html>
