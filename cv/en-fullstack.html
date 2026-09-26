@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hermann Pauwells Rivera — CV (Full-Stack (EN))</title>
-<meta name="description" content="Full-Stack Developer | Software Engineer. Full-stack developer specialized in TypeScript, React/Next.js and Node.js, graduating in December 2026 with a…" />
+<meta name="description" content="Full-Stack Developer | Software Engineer. Full-stack developer (TypeScript, React/Next.js, Node.js) graduating in December 2026 in Computer Science…" />
 <meta name="robots" content="index,follow,max-image-preview:large" />
 <meta name="author" content="Hermann Pauwells Rivera" />
 <link rel="canonical" href="https://hermannpr.github.io/cv/en-fullstack.html" />
@@ -15,7 +15,7 @@
 <link rel="alternate" hreflang="x-default" href="https://hermannpr.github.io/" />
 <meta property="og:type" content="profile" />
 <meta property="og:title" content="Hermann Pauwells Rivera — CV (Full-Stack (EN))" />
-<meta property="og:description" content="Full-Stack Developer | Software Engineer. Full-stack developer specialized in TypeScript, React/Next.js and Node.js, graduating in December 2026 with a…" />
+<meta property="og:description" content="Full-Stack Developer | Software Engineer. Full-stack developer (TypeScript, React/Next.js, Node.js) graduating in December 2026 in Computer Science…" />
 <meta property="og:url" content="https://hermannpr.github.io/cv/en-fullstack.html" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:image" content="https://hermannpr.github.io/files/og-en-fullstack.png" />
@@ -69,7 +69,15 @@
     "CI",
     "JUCE",
     "TensorFlow",
-    "Unity"
+    "Unity",
+    "Claude Code",
+    "Codex",
+    "LLM APIs (Anthropic",
+    "Gemini",
+    "Groq",
+    "DeepSeek)",
+    "RAG",
+    "Vercel AI SDK"
   ],
   "knowsLanguage": [
     "Spanish",
@@ -203,7 +211,7 @@
   </header>
   <section class="sec">
   <h2>Profile</h2>
-  <p>Full-stack developer specialized in TypeScript, React/Next.js and Node.js, graduating in December 2026 with a Computer Science Engineering degree from Tecnológico de Monterrey. Experienced building software for real businesses and users, including e-commerce, real-time systems and APIs. Additional experience in C++/JUCE, DSP and machine learning.</p>
+  <p>Full-stack developer (TypeScript, React/Next.js, Node.js) graduating in December 2026 in Computer Science Engineering from Tecnológico de Monterrey. I build software for real businesses (e-commerce, real-time systems, APIs) and LLM/AI-agent tooling, with experience in C++/JUCE audio and machine learning.</p>
 </section>
 <section class="sec">
   <h2>Technical Skills</h2>
@@ -212,6 +220,7 @@
     <li><b>Frontend:</b> React, Next.js, Vite, Tailwind CSS, Three.js</li>
     <li><b>Backend &amp; Data:</b> Node.js, Express, Supabase, PostgreSQL, MySQL, FastAPI, REST, SSE</li>
     <li><b>Tools:</b> Git, GitHub, Docker, Vercel, GitHub Actions, CI, JUCE, TensorFlow, Unity</li>
+    <li><b>AI &amp; LLM:</b> Claude Code, Codex, LLM APIs (Anthropic, Gemini, Groq, DeepSeek), RAG, Vercel AI SDK</li>
   </ul>
 </section>
 <section class="sec">
@@ -219,7 +228,7 @@
   <article class="item">
     <div class="itemhead"><h3>Full-Stack Developer (Freelance) — Juguetería El Arbolito</h3><span class="dates">2026–present</span></div>
     <ul>
-      <li>Building the e-commerce and admin platform for a single-branch retail store (catalog, cart, checkout, backend).</li>
+      <li>Building the e-commerce and admin platform for a single-store retailer (catalog, cart, checkout, backend).</li>
       <li>Migrated a 2,395-product catalog from the legacy point-of-sale system (Eleventa) into PostgreSQL/Supabase.</li>
       <li>Integrating Mercado Pago payments and inventory sync between the online store and the in-store POS.</li>
     </ul>
@@ -227,14 +236,14 @@
   <article class="item">
     <div class="itemhead"><h3>Freelance Web Developer — Client websites</h3><span class="dates">2025–present</span></div>
     <ul>
-      <li>Designed and built a portfolio site for a writer and audiovisual producer (Next.js, React, Tailwind CSS, Framer Motion); deployed on Vercel.</li>
+      <li>Designed and built a portfolio site for a writer and audiovisual producer (Next.js, React, Tailwind CSS); on Vercel.</li>
       <li>Building a personal landing page for a corporate-compliance lawyer (Astro, React, Tailwind CSS); in progress.</li>
     </ul>
   </article>
   <article class="item">
     <div class="itemhead"><h3>Web Developer (scholarship service) — Ciberistas, Tecnológico de Monterrey</h3><span class="dates">2025</span></div>
     <ul>
-      <li>Fixed bugs and refactored legacy layouts on the web platform of a youth coding program (React/TypeScript, Tailwind CSS).</li>
+      <li>Fixed bugs and refactored legacy layouts on a youth coding program's web platform (React/TypeScript, Tailwind).</li>
     </ul>
   </article>
 </section>
@@ -249,10 +258,17 @@
     <p class="links"><a href="https://work-hub-mty-six.vercel.app/login">Demo</a></p>
   </article>
   <article class="item">
+    <div class="itemhead"><h3>Jarvis — personal AI agent system</h3><span class="meta">Personal · TypeScript/Node · Codex SDK · Claude Code</span><span class="dates">2026</span></div>
+    <ul>
+      <li>Local-first control plane for autonomous coding agents: permission policies, secret-redacted audit logs, emergency stop and Codex SDK runs in isolated Git worktrees (30 tests).</li>
+      <li>Shared Markdown knowledge graph (Brain) used by Claude Code, Codex and DeepSeek agents across devices; mobile PWA with chat and a 3D memory map.</li>
+    </ul>
+  </article>
+  <article class="item">
     <div class="itemhead"><h3>RainLab Northsky</h3><span class="meta">Interactive 3D web application · Three.js</span><span class="dates">2026</span></div>
     <ul>
       <li>Interactive viewer with animated camera transitions, component views and a Blender/GLB asset pipeline.</li>
-      <li>Reduced rendering draw calls from 637 to 127 (80%) through mesh batching; rendering pauses when the viewer is off screen.</li>
+      <li>Cut draw calls from 637 to 127 (80%) through mesh batching; rendering pauses when off screen.</li>
     </ul>
     <p class="links"><a href="https://rainlab-northsky.vercel.app">Demo</a></p>
   </article>
@@ -264,14 +280,7 @@
     </ul>
     <p class="links"><a href="https://github.com/HermannPR/folk-park">Source</a></p>
   </article>
-  <article class="item">
-    <div class="itemhead"><h3>HeatShield</h3><span class="meta">iOS app</span><span class="dates">2025</span></div>
-    <div class="award">Winner, Sustainability category, Swift Challenge Fest 2025 (Tecnológico de Monterrey)</div>
-    <ul>
-      <li>iOS app with real-time heat alerts (OpenWeatherMap), heat index and shelter maps.</li>
-    </ul>
-  </article>
-  <p class="other">Other projects: Credifiel Challenge (Datathon 2025) · Multi-agent warehouse simulation (RL) · MAWI · VisualControl (IoT) · Mildred Pierce (band website) · GateGenius (HackMTY 2025).</p>
+  <p class="other">Other projects: HeatShield · Credifiel Challenge (Datathon 2025) · Multi-agent warehouse simulation (RL) · DreamOS · JesusGPT · Ojeada (LLM Touch Bar app) · claude-phone &amp; PI3HUB (Claude Code on phone/Pi) · Mildred Pierce (band website) · GateGenius (HackMTY 2025).</p>
 </section>
 <section class="sec">
   <h2>Education</h2>
@@ -283,7 +292,7 @@
 <section class="sec">
   <h2>Activities</h2>
   <ul>
-    <li>SwiftTec Coding Community (2025): hackathons and innovation challenges · Music production and sound design (FL Studio).</li>
+    <li>SwiftTec Coding Community (2025): hackathons and innovation challenges · Music production (FL Studio).</li>
   </ul>
   <p class="other">Spanish — native · English — C1</p>
 </section>
