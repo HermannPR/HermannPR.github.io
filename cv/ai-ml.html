@@ -53,6 +53,7 @@
     "SQL",
     "Kotlin",
     "C++",
+    "Jev de TypeSafe",
     "LLMs (OpenRouter)",
     "TensorFlow",
     "faster-whisper",
@@ -204,13 +205,13 @@
   </header>
   <section class="sec">
   <h2>Perfil</h2>
-  <p>Software engineer con foco en AI/ML: Python (TensorFlow, FastAPI) y full-stack TypeScript (React/Next.js, Node.js); último semestre de Ingeniería en Tecnologías Computacionales en el Tecnológico de Monterrey, disponible tiempo completo desde enero de 2027. Fundador de tres startups en etapa temprana que integran LLMs: coordinación de agentes de IA, análisis nutricional y producción automatizada de video. Modelos de redes neuronales para casos de negocio (Datathon 2025).</p>
+  <p>Software engineer con foco en AI/ML: Python (TensorFlow, FastAPI) y full-stack TypeScript (React/Next.js, Node.js); último semestre de Ingeniería en Tecnologías Computacionales en el Tecnológico de Monterrey, disponible tiempo completo desde enero de 2027. Fundador de tres startups en etapa temprana que integran LLMs y Jev de TypeSafe: coordinación de agentes de IA, análisis nutricional y producción automatizada de video. Modelos de redes neuronales para casos de negocio (Datathon 2025).</p>
 </section>
 <section class="sec">
   <h2>Habilidades técnicas</h2>
   <ul class="skills">
     <li><b>Lenguajes:</b> Python, TypeScript, JavaScript, SQL, Kotlin, C++</li>
-    <li><b>IA y ML:</b> LLMs (OpenRouter), TensorFlow, faster-whisper, Q-learning, AgentPy</li>
+    <li><b>IA y ML:</b> Jev de TypeSafe, LLMs (OpenRouter), TensorFlow, faster-whisper, Q-learning, AgentPy</li>
     <li><b>Backend y datos:</b> FastAPI, Flask, Node.js, PostgreSQL, Supabase, SQLite</li>
     <li><b>Frontend y herramientas:</b> React, Next.js, Vite, Git, GitHub Actions, FFmpeg, Unity</li>
   </ul>
@@ -231,8 +232,9 @@
   <article class="item">
     <div class="itemhead"><h3>HIVEMIND</h3><span class="meta">Cofundador · chat para equipos de personas y agentes de IA · piloto privado</span><span class="dates">sep 2026 a presente</span></div>
     <ul>
-      <li>Apps Android (Kotlin/Jetpack Compose) y Windows (Electron) sobre un servidor ntfy autoalojado; mensajes firmados con HMAC-SHA256 e invitaciones a la beta con códigos de un solo uso.</li>
-      <li>Despachador en Python que asigna cada mensaje o tarea a un agente de IA con un LLM vía OpenRouter (menos de US$0.0001 por mensaje), con respaldo primario/standby; 104 pruebas automatizadas en el cliente de Windows y auditoría de seguridad propia.</li>
+      <li>Apps Android (Kotlin/Jetpack Compose) y Windows (Electron) sobre un servidor ntfy autoalojado; mensajes firmados con HMAC-SHA256, invitaciones de un solo uso y 104 pruebas automatizadas.</li>
+      <li>Orquestación de agentes con Jev de TypeSafe (vía OpenRouter): un despachador en Python decide qué agente de IA toma cada mensaje o tarea (menos de US$0.0001 por mensaje, tope de US$0.50 al día), a través de un gateway propio alojado en un teléfono Android.</li>
+      <li>Compactación de contexto guiada por Jev para bots de Claude Code (fork MIT de fast-jev-compaction con presupuesto de tokens, decaimiento y archivo sin pérdida): ~57K tokens en vez de ~229K, en 1.5 s.</li>
     </ul>
     <p class="links"><a href="https://hivemind-web-rho.vercel.app">Sitio</a><a href="https://github.com/HermannPR/hivemind-chat-releases">Descargas</a></p>
   </article>
@@ -240,14 +242,14 @@
     <div class="itemhead"><h3>recaps-studio</h3><span class="meta">Cofundador · fábrica de videos narrados con IA (novela → video estilo manhwa)</span><span class="dates">sep 2026 a presente</span></div>
     <ul>
       <li>Pipeline en Python reanudable, con caché por hash en SQLite: guion, voz TTS con tiempos por palabra (faster-whisper), planos, imágenes con IA y juez de visión, subtítulos y render con FFmpeg/Remotion.</li>
-      <li>Modos con compuertas de aprobación humana, tope de presupuesto en créditos y QA automático; pruebas con pytest y proveedores simulados para no gastar créditos.</li>
+      <li>Compuertas de aprobación humana, tope de presupuesto en créditos, QA automático y pytest con proveedores simulados.</li>
     </ul>
   </article>
   <article class="item">
     <div class="itemhead"><h3>Chécalo</h3><span class="meta">Fundador · app de nutrición para México · en desarrollo</span><span class="dates">sep 2026 a presente</span></div>
     <ul>
       <li>Escanea el código de barras (Open Food Facts) y calcula los sellos NOM-051 con reglas deterministas verificadas contra el DOF; PWA en JavaScript y app Android (Kotlin, CameraX, ML Kit).</li>
-      <li>Un LLM solo explica el veredicto, detrás de un proxy con caché compartida por producto: el costo de IA crece con el catálogo, no con los usuarios. Modelo de negocio y costos documentados.</li>
+      <li>Jev de TypeSafe da un veredicto explicable y detecta contradicciones entre ingredientes y tabla; los números salen de las reglas. Proxy con caché por producto: el costo de IA crece con el catálogo, no con los usuarios.</li>
     </ul>
   </article>
 </section>
