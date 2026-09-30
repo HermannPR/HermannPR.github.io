@@ -251,8 +251,9 @@
   <article class="item">
     <div class="itemhead"><h3>HIVEMIND</h3><span class="meta">Co-founder · team chat for people and AI agents · private pilot</span><span class="dates">Sep 2026 to present</span></div>
     <ul>
-      <li>Android (Kotlin/Jetpack Compose) and Windows (Electron) apps over a self-hosted ntfy server; HMAC-SHA256 signed messages and beta invitations with single-use codes.</li>
-      <li>Python dispatcher that assigns each message or task to an AI agent using an LLM via OpenRouter (under US$0.0001 per message), with primary/standby failover; 104 automated tests in the Windows client and an in-house security audit.</li>
+      <li>Android (Kotlin/Jetpack Compose) and Windows (Electron) apps over a self-hosted ntfy server; HMAC-SHA256 signed messages, single-use invitations and 104 automated tests.</li>
+      <li>Agent orchestration with TypeSafe's Jev (via OpenRouter): a Python dispatcher decides which AI agent takes each message or task (under US$0.0001 per message, US$0.50 daily cap), through our own gateway hosted on an Android phone.</li>
+      <li>Jev-guided context compaction for long-running Claude Code bots (MIT fork of fast-jev-compaction with a token budget, decay and a lossless archive): ~57K tokens kept instead of ~229K, in 1.5 s.</li>
     </ul>
     <p class="links"><a href="https://hivemind-web-rho.vercel.app">Website</a><a href="https://github.com/HermannPR/hivemind-chat-releases">Downloads</a></p>
   </article>
@@ -260,14 +261,14 @@
     <div class="itemhead"><h3>recaps-studio</h3><span class="meta">Co-founder · AI narrated-video factory (novel → manhwa-style video)</span><span class="dates">Sep 2026 to present</span></div>
     <ul>
       <li>Resumable Python pipeline with hash-based caching in SQLite: script, TTS with word-level timing (faster-whisper), shot planning, AI images with a vision judge, subtitles and FFmpeg/Remotion rendering.</li>
-      <li>Run modes with human approval gates, a credit budget cap and automated QA; tested with pytest and mocked providers so tests spend no credits.</li>
+      <li>Human approval gates, a credit budget cap, automatic QA and pytest with mocked providers.</li>
     </ul>
   </article>
   <article class="item">
     <div class="itemhead"><h3>Chécalo</h3><span class="meta">Founder · nutrition app for Mexico · in development</span><span class="dates">Sep 2026 to present</span></div>
     <ul>
       <li>Scans barcodes (Open Food Facts) and computes Mexico's NOM-051 warning labels with deterministic rules checked against the official gazette (DOF); JavaScript PWA and Android app (Kotlin, CameraX, ML Kit).</li>
-      <li>An LLM only explains the verdict, behind a proxy with a per-product shared cache, so AI cost grows with the catalog, not with users. Business model and unit costs documented.</li>
+      <li>TypeSafe's Jev gives an explainable verdict and flags contradictions between ingredients and the nutrition table; every number comes from the rules. Per-product cached proxy: AI cost grows with the catalog, not with users.</li>
     </ul>
   </article>
 </section>
