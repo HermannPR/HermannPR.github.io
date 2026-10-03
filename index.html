@@ -212,7 +212,7 @@
   </header>
   <section class="sec">
   <h2>Perfil</h2>
-  <p>Desarrollador full-stack (TypeScript, React/Next.js, Node.js) en el último semestre de Ingeniería en Tecnologías Computacionales en el Tecnológico de Monterrey; disponible tiempo completo desde enero de 2027. Construyo software que se usa: una tienda en línea en producción para un negocio real, sistemas en tiempo real y APIs. Fundador de tres startups en etapa temprana (agentes de IA orquestados con Jev de TypeSafe, nutrición y video con IA). También trabajo con C++/JUCE, DSP y machine learning.</p>
+  <p>Desarrollador full-stack (TypeScript, React/Next.js, Node.js) en el último semestre de Ingeniería en Tecnologías Computacionales en el Tecnológico de Monterrey; disponible tiempo completo desde enero de 2027. Construyo software que se usa: una tienda en línea en producción para un negocio real, sistemas en tiempo real y APIs. Fundador de cuatro startups en etapa temprana (agentes de IA con Jev de TypeSafe, nutrición, video con IA y cumplimiento PLD). También trabajo con C++/JUCE, DSP y machine learning.</p>
 </section>
 <section class="sec">
   <h2>Habilidades técnicas</h2>
@@ -239,25 +239,29 @@
   <article class="item">
     <div class="itemhead"><h3>HIVEMIND</h3><span class="meta">Cofundador · chat para equipos de personas y agentes de IA · piloto privado</span><span class="dates">sep 2026 a presente</span></div>
     <ul>
-      <li>Apps Android (Kotlin/Jetpack Compose) y Windows (Electron) sobre un servidor ntfy autoalojado; mensajes firmados con HMAC-SHA256, invitaciones de un solo uso y 104 pruebas automatizadas.</li>
-      <li>Orquestación de agentes con Jev de TypeSafe (vía OpenRouter): un despachador en Python decide qué agente de IA toma cada mensaje o tarea (menos de US$0.0001 por mensaje, tope de US$0.50 al día), a través de un gateway propio alojado en un teléfono Android.</li>
-      <li>Compactación de contexto guiada por Jev para bots de Claude Code (fork MIT de fast-jev-compaction con presupuesto de tokens, decaimiento y archivo sin pérdida): ~57K tokens en vez de ~229K, en 1.5 s.</li>
+      <li>Apps Android (Kotlin/Compose) y Windows (Electron) sobre ntfy autoalojado; mensajes firmados con HMAC-SHA256 y 398 pruebas (148 Windows, 250 Android). Android 1.16: anti-replay y token limitado al host.</li>
+      <li>Historial acotado y detección lineal de pendientes: de 2.5 s a 20 ms por evento con 20,000 mensajes. Núcleo en Rust en curso con Claude Code y Codex como agentes; orquestación y compactación de contexto con Jev.</li>
     </ul>
     <p class="poster"><a href="https://hermannpr.github.io/files/hivemind-promo-720p.mp4"><img src="https://hermannpr.github.io/files/hivemind-promo-poster.jpg" alt="Video (42 s): HIVEMIND" width="320" height="180" loading="lazy" /></a></p>
     <p class="links"><a href="https://hivemind-web-rho.vercel.app">Sitio</a><a href="https://github.com/HermannPR/hivemind-chat-releases">Descargas</a><a href="https://hermannpr.github.io/files/hivemind-promo-720p.mp4">Video (42 s)</a></p>
   </article>
   <article class="item">
+    <div class="itemhead"><h3>Consultoría PLD</h3><span class="meta">Cofundador (tecnología) · prevención de lavado de dinero · en arranque</span><span class="dates">oct 2026 a presente</span></div>
+    <ul>
+      <li>Cofundador a cargo de tecnología de una consultoría PLD en México, con dos profesionales (quien diseñó el sistema PLD de un gran comercio minorista y un abogado certificado en PLD). Desarrollo oficina virtual, imagen, campaña y procesos automatizados.</li>
+      <li>Construí el sitio con cuestionario de autodiagnóstico de actividades vulnerables (LFPIORPI) y matriz de riesgos, un folleto y el plan de campaña del noroeste. Siguiente: sistema PLD (matrices y manuales), como licencia o servicio.</li>
+    </ul>
+  </article>
+  <article class="item">
     <div class="itemhead"><h3>Chécalo</h3><span class="meta">Fundador · app de nutrición para México · en desarrollo</span><span class="dates">sep 2026 a presente</span></div>
     <ul>
-      <li>Escanea el código de barras (Open Food Facts) y calcula los sellos NOM-051 con reglas deterministas verificadas contra el DOF; PWA en JavaScript y app Android (Kotlin, CameraX, ML Kit).</li>
-      <li>Jev de TypeSafe da un veredicto explicable y detecta contradicciones entre ingredientes y tabla; los números salen de las reglas. Proxy con caché por producto: el costo de IA crece con el catálogo, no con los usuarios.</li>
+      <li>Escanea el código de barras y calcula los sellos NOM-051 con reglas deterministas verificadas contra el DOF; Jev de TypeSafe da un veredicto explicable. PWA estilo iOS con modo sin conexión y app Android (Kotlin); 53 pruebas.</li>
     </ul>
   </article>
   <article class="item">
     <div class="itemhead"><h3>recaps-studio</h3><span class="meta">Cofundador · fábrica de videos narrados con IA (novela → video estilo manhwa)</span><span class="dates">sep 2026 a presente</span></div>
     <ul>
-      <li>Pipeline en Python reanudable, con caché por hash en SQLite: guion, voz TTS con tiempos por palabra (faster-whisper), planos, imágenes con IA y juez de visión, subtítulos y render con FFmpeg/Remotion.</li>
-      <li>Compuertas de aprobación humana, tope de presupuesto en créditos, QA automático y pytest con proveedores simulados.</li>
+      <li>Pipeline en Python reanudable de 13 etapas con orquestador y página de estado en vivo (TTS, imágenes con IA, FFmpeg/Remotion). Ya publicó videos completos en YouTube (el segundo dura 1 h 42 min); NVENC en GPU (~25% más rápido), alineación forzada MMS CTC, variante en español y render distribuido.</li>
     </ul>
   </article>
 </section>
@@ -266,7 +270,7 @@
   <article class="item">
     <div class="itemhead"><h3>Lumina Reservations (WorkHub MTY)</h3><span class="meta">Proyecto académico en equipo · Node/Express, SSE, React</span><span class="dates">2026</span></div>
     <ul>
-      <li>Implementé el backend de reservas en Node/Express (servicios, repositorios, controladores, migraciones) y la actualización de ocupación en tiempo real por SSE.</li>
+      <li>Implementé el backend de reservas en Node/Express (servicios, repositorios, controladores) y la ocupación en tiempo real por SSE.</li>
       <li>Desarrollé el mapa de piso y el flujo de reservas en React/Vite (dashboard, filtros, confirmación) con control de roles.</li>
     </ul>
     <p class="links"><a href="https://work-hub-mty-six.vercel.app/login">Demo</a></p>

@@ -234,25 +234,29 @@
   <article class="item">
     <div class="itemhead"><h3>HIVEMIND</h3><span class="meta">Co-founder · team chat for people and AI agents · private pilot</span><span class="dates">Sep 2026 to present</span></div>
     <ul>
-      <li>Android (Kotlin/Jetpack Compose) and Windows (Electron) apps over a self-hosted ntfy server; HMAC-SHA256 signed messages, single-use invitations and 104 automated tests.</li>
-      <li>Agent orchestration with TypeSafe's Jev (via OpenRouter): a Python dispatcher decides which AI agent takes each message or task (under US$0.0001 per message, US$0.50 daily cap), through our own gateway hosted on an Android phone.</li>
-      <li>Jev-guided context compaction for long-running Claude Code bots (MIT fork of fast-jev-compaction with a token budget, decay and a lossless archive): ~57K tokens kept instead of ~229K, in 1.5 s.</li>
+      <li>Android (Kotlin/Compose) and Windows (Electron) apps over self-hosted ntfy; HMAC-SHA256 signed messages and 398 tests (148 Windows, 250 Android). Android 1.16: anti-replay and token scoped to the host.</li>
+      <li>Bounded history and linear pending detection: from 2.5 s to 20 ms per event at 20,000 messages. Rust core in progress with Claude Code and Codex as agents; orchestration and context compaction with Jev.</li>
     </ul>
     <p class="poster"><a href="https://hermannpr.github.io/files/hivemind-promo-720p.mp4"><img src="https://hermannpr.github.io/files/hivemind-promo-poster.jpg" alt="Video (42 s): HIVEMIND" width="320" height="180" loading="lazy" /></a></p>
     <p class="links"><a href="https://hivemind-web-rho.vercel.app">Website</a><a href="https://github.com/HermannPR/hivemind-chat-releases">Downloads</a><a href="https://hermannpr.github.io/files/hivemind-promo-720p.mp4">Video (42 s)</a></p>
   </article>
   <article class="item">
+    <div class="itemhead"><h3>AML consultancy</h3><span class="meta">Co-founder (technology) · anti-money-laundering · early stage</span><span class="dates">Oct 2026 to present</span></div>
+    <ul>
+      <li>Co-founder in charge of technology at a Mexican AML compliance consultancy, with two professionals (one who designed a large retailer's AML system, one certified AML lawyer). Building the virtual office, brand, campaign and automated processes.</li>
+      <li>Built the website with a vulnerable-activities self-assessment (LFPIORPI) and risk matrix, a brochure and the northwest campaign plan. Next: an AML system (matrices and manuals), as a license or service.</li>
+    </ul>
+  </article>
+  <article class="item">
     <div class="itemhead"><h3>recaps-studio</h3><span class="meta">Co-founder · AI narrated-video factory (novel → manhwa-style video)</span><span class="dates">Sep 2026 to present</span></div>
     <ul>
-      <li>Resumable Python pipeline with hash-based caching in SQLite: script, TTS with word-level timing (faster-whisper), shot planning, AI images with a vision judge, subtitles and FFmpeg/Remotion rendering.</li>
-      <li>Human approval gates, a credit budget cap, automatic QA and pytest with mocked providers.</li>
+      <li>Resumable 13-stage Python pipeline with an orchestrator and live status page (TTS, AI images, FFmpeg/Remotion). Already published full-length videos on YouTube (the second runs 1 h 42 min); NVENC GPU encoding (~25% faster), MMS CTC forced alignment, a Spanish variant and distributed rendering.</li>
     </ul>
   </article>
   <article class="item">
     <div class="itemhead"><h3>Chécalo</h3><span class="meta">Founder · nutrition app for Mexico · in development</span><span class="dates">Sep 2026 to present</span></div>
     <ul>
-      <li>Scans barcodes (Open Food Facts) and computes Mexico's NOM-051 warning labels with deterministic rules checked against the official gazette (DOF); JavaScript PWA and Android app (Kotlin, CameraX, ML Kit).</li>
-      <li>TypeSafe's Jev gives an explainable verdict and flags contradictions between ingredients and the nutrition table; every number comes from the rules. Per-product cached proxy: AI cost grows with the catalog, not with users.</li>
+      <li>Scans barcodes and computes Mexico's NOM-051 warning labels with deterministic rules checked against the official gazette (DOF); TypeSafe's Jev gives an explainable verdict. iOS-style offline PWA and Android app (Kotlin); 53 tests.</li>
     </ul>
   </article>
 </section>
@@ -261,8 +265,8 @@
   <article class="item">
     <div class="itemhead"><h3>CrediFiel Challenge (Datathon 2025)</h3><span class="meta">Data / ML · team project</span><span class="dates">2025</span></div>
     <ul>
-      <li>Neural-network models (regression + classification) to optimize Credifiel's direct-debit collections: minimize commission costs or maximize recoveries.</li>
-      <li>Real financial dataset of direct-debit collections and efficiency metrics (KPIs); Flask API to serve inferences and a React + Vite frontend.</li>
+      <li>Neural networks (regression + classification) to optimize Credifiel's direct-debit collections: minimize commissions or maximize recoveries.</li>
+      <li>Real direct-debit collections dataset and KPIs; Flask API and a React + Vite frontend.</li>
     </ul>
   </article>
   <article class="item">
