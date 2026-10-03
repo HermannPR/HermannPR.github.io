@@ -234,25 +234,29 @@
   <article class="item">
     <div class="itemhead"><h3>HIVEMIND</h3><span class="meta">Cofundador · chat para equipos de personas y agentes de IA · piloto privado</span><span class="dates">sep 2026 a presente</span></div>
     <ul>
-      <li>Apps Android (Kotlin/Jetpack Compose) y Windows (Electron) sobre un servidor ntfy autoalojado; mensajes firmados con HMAC-SHA256, invitaciones de un solo uso y 104 pruebas automatizadas.</li>
-      <li>Orquestación de agentes con Jev de TypeSafe (vía OpenRouter): un despachador en Python decide qué agente de IA toma cada mensaje o tarea (menos de US$0.0001 por mensaje, tope de US$0.50 al día), a través de un gateway propio alojado en un teléfono Android.</li>
-      <li>Compactación de contexto guiada por Jev para bots de Claude Code (fork MIT de fast-jev-compaction con presupuesto de tokens, decaimiento y archivo sin pérdida): ~57K tokens en vez de ~229K, en 1.5 s.</li>
+      <li>Apps Android (Kotlin/Compose) y Windows (Electron) sobre ntfy autoalojado; mensajes firmados con HMAC-SHA256 y 398 pruebas (148 Windows, 250 Android). Android 1.16: anti-replay y token limitado al host.</li>
+      <li>Historial acotado y detección lineal de pendientes: de 2.5 s a 20 ms por evento con 20,000 mensajes. Núcleo en Rust en curso con Claude Code y Codex como agentes; orquestación y compactación de contexto con Jev.</li>
     </ul>
     <p class="poster"><a href="https://hermannpr.github.io/files/hivemind-promo-720p.mp4"><img src="https://hermannpr.github.io/files/hivemind-promo-poster.jpg" alt="Video (42 s): HIVEMIND" width="320" height="180" loading="lazy" /></a></p>
     <p class="links"><a href="https://hivemind-web-rho.vercel.app">Sitio</a><a href="https://github.com/HermannPR/hivemind-chat-releases">Descargas</a><a href="https://hermannpr.github.io/files/hivemind-promo-720p.mp4">Video (42 s)</a></p>
   </article>
   <article class="item">
+    <div class="itemhead"><h3>Consultoría PLD</h3><span class="meta">Cofundador (tecnología) · prevención de lavado de dinero · en arranque</span><span class="dates">oct 2026 a presente</span></div>
+    <ul>
+      <li>Cofundador a cargo de tecnología de una consultoría PLD en México, con dos profesionales (quien diseñó el sistema PLD de un gran comercio minorista y un abogado certificado en PLD). Desarrollo oficina virtual, imagen, campaña y procesos automatizados.</li>
+      <li>Construí el sitio con cuestionario de autodiagnóstico de actividades vulnerables (LFPIORPI) y matriz de riesgos, un folleto y el plan de campaña del noroeste. Siguiente: sistema PLD (matrices y manuales), como licencia o servicio.</li>
+    </ul>
+  </article>
+  <article class="item">
     <div class="itemhead"><h3>recaps-studio</h3><span class="meta">Cofundador · fábrica de videos narrados con IA (novela → video estilo manhwa)</span><span class="dates">sep 2026 a presente</span></div>
     <ul>
-      <li>Pipeline en Python reanudable, con caché por hash en SQLite: guion, voz TTS con tiempos por palabra (faster-whisper), planos, imágenes con IA y juez de visión, subtítulos y render con FFmpeg/Remotion.</li>
-      <li>Compuertas de aprobación humana, tope de presupuesto en créditos, QA automático y pytest con proveedores simulados.</li>
+      <li>Pipeline en Python reanudable de 13 etapas con orquestador y página de estado en vivo (TTS, imágenes con IA, FFmpeg/Remotion). Ya publicó videos completos en YouTube (el segundo dura 1 h 42 min); NVENC en GPU (~25% más rápido), alineación forzada MMS CTC, variante en español y render distribuido.</li>
     </ul>
   </article>
   <article class="item">
     <div class="itemhead"><h3>Chécalo</h3><span class="meta">Fundador · app de nutrición para México · en desarrollo</span><span class="dates">sep 2026 a presente</span></div>
     <ul>
-      <li>Escanea el código de barras (Open Food Facts) y calcula los sellos NOM-051 con reglas deterministas verificadas contra el DOF; PWA en JavaScript y app Android (Kotlin, CameraX, ML Kit).</li>
-      <li>Jev de TypeSafe da un veredicto explicable y detecta contradicciones entre ingredientes y tabla; los números salen de las reglas. Proxy con caché por producto: el costo de IA crece con el catálogo, no con los usuarios.</li>
+      <li>Escanea el código de barras y calcula los sellos NOM-051 con reglas deterministas verificadas contra el DOF; Jev de TypeSafe da un veredicto explicable. PWA estilo iOS con modo sin conexión y app Android (Kotlin); 53 pruebas.</li>
     </ul>
   </article>
 </section>
@@ -261,8 +265,8 @@
   <article class="item">
     <div class="itemhead"><h3>Reto CrediFiel (Datathon 2025)</h3><span class="meta">Data / ML · proyecto en equipo</span><span class="dates">2025</span></div>
     <ul>
-      <li>Modelo de redes neuronales (regresión + clasificación) para optimizar la cobranza domiciliada de Credifiel: minimizar costos de comisión o maximizar cobros.</li>
-      <li>Dataset financiero real de cobranza domiciliada y métricas de eficiencia (KPIs); API en Flask para servir inferencias y frontend en React + Vite.</li>
+      <li>Redes neuronales (regresión + clasificación) para optimizar la cobranza domiciliada de Credifiel: minimizar comisiones o maximizar cobros.</li>
+      <li>Dataset real de cobranza domiciliada y KPIs; API en Flask y frontend en React + Vite.</li>
     </ul>
   </article>
   <article class="item">
