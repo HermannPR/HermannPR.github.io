@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
+<meta name="color-scheme" content="light dark" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hermann Pauwells Rivera · CV Full-Stack (EN)</title>
-<meta name="description" content="Full-Stack Developer | Software Engineer. Full-stack developer (TypeScript, React/Next.js, Node.js) in the final semester of a B.S. in Computer Science and…" />
+<meta name="description" content="Full-stack developer (TypeScript, React/Next.js, Node.js) in the final semester of a B.S. in Computer Science and Technology at Tecnológico de Monterrey. Available full-time from January 2027." />
 <meta name="robots" content="index,follow,max-image-preview:large" />
 <meta name="author" content="Hermann Pauwells Rivera" />
 <link rel="canonical" href="https://hermannpr.github.io/cv/en-fullstack.html" />
@@ -15,14 +16,17 @@
 <link rel="alternate" hreflang="x-default" href="https://hermannpr.github.io/" />
 <meta property="og:type" content="profile" />
 <meta property="og:title" content="Hermann Pauwells Rivera · CV Full-Stack (EN)" />
-<meta property="og:description" content="Full-Stack Developer | Software Engineer. Full-stack developer (TypeScript, React/Next.js, Node.js) in the final semester of a B.S. in Computer Science and…" />
+<meta property="og:description" content="Full-stack developer (TypeScript, React/Next.js, Node.js) in the final semester of a B.S. in Computer Science and Technology at Tecnológico de Monterrey. Available full-time from January 2027." />
 <meta property="og:url" content="https://hermannpr.github.io/cv/en-fullstack.html" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:image" content="https://hermannpr.github.io/files/og-en-fullstack.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="Hermann Pauwells Rivera · CV Full-Stack (EN)" />
+<meta property="og:site_name" content="Hermann Pauwells Rivera" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Hermann Pauwells Rivera · CV Full-Stack (EN)" />
+<meta name="twitter:description" content="Full-stack developer (TypeScript, React/Next.js, Node.js) in the final semester of a B.S. in Computer Science and Technology at Tecnológico de Monterrey. Available full-time from January 2027." />
 <meta name="twitter:image" content="https://hermannpr.github.io/files/og-en-fullstack.png" />
 <script type="application/ld+json">
 {
@@ -175,8 +179,13 @@
   .itemhead .meta { color: var(--muted); font-weight: 500; font-size: 0.92rem; }
   .itemhead .dates { margin-left: auto; color: var(--muted); font-size: 0.86rem; font-variant-numeric: tabular-nums; }
   .award { color: var(--award); font-weight: 600; font-size: 0.9rem; margin-top: 0.15rem; }
-  .links { font-size: 0.86rem; margin-top: 0.25rem; }
-  .links a { margin-right: 0.75rem; }
+  .links { font-size: 0.86rem; margin-top: 0.25rem; display: flex; flex-wrap: wrap; gap: 0 0.25rem; margin-left: -0.4rem; }
+  .links a { display: inline-block; padding: 0.3rem 0.4rem; min-height: 24px; }
+  .skip { position: absolute; left: 0.5rem; top: -4rem; background: var(--btn); color: var(--btn-fg); padding: 0.5rem 0.9rem; border-radius: 6px; z-index: 10; }
+  .skip:focus { top: 0.5rem; }
+  .page:focus { outline: none; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+  .chip, .pdf { min-height: 24px; }
   .poster { margin: 0.5rem 0 0; }
   .poster img { max-width: 100%; height: auto; border-radius: 8px; display: block; }
   .other { font-size: 0.9rem; color: var(--muted); margin-top: 0.7rem; }
@@ -195,7 +204,8 @@
 </style>
 </head>
 <body>
-<main class="page">
+<a class="skip" href="#contenido">Skip to content</a>
+<main class="page" id="contenido" tabindex="-1">
   <header>
     <h1>Hermann Pauwells Rivera</h1>
     <p class="headline">Full-Stack Developer | Software Engineer</p>
@@ -243,8 +253,8 @@
       <li>Agent orchestration with TypeSafe's Jev (via OpenRouter): a Python dispatcher decides which AI agent takes each message or task (under US$0.0001 per message, US$0.50 daily cap), through our own gateway hosted on an Android phone.</li>
       <li>Jev-guided context compaction for long-running Claude Code bots (MIT fork of fast-jev-compaction with a token budget, decay and a lossless archive): ~57K tokens kept instead of ~229K, in 1.5 s.</li>
     </ul>
-    <p class="poster"><a href="https://hermannpr.github.io/files/hivemind-promo-720p.mp4"><img src="https://hermannpr.github.io/files/hivemind-promo-poster.jpg" alt="Video (42 s): HIVEMIND" width="320" height="180" loading="lazy" /></a></p>
-    <p class="links"><a href="https://hivemind-web-rho.vercel.app">Website</a><a href="https://github.com/HermannPR/hivemind-chat-releases">Downloads</a><a href="https://hermannpr.github.io/files/hivemind-promo-720p.mp4">Video (42 s)</a></p>
+    <p class="poster"><a href="../files/hivemind-promo-720p.mp4"><img src="../files/hivemind-promo-poster-640.webp" alt="Video (42 s): HIVEMIND" width="320" height="180" loading="lazy" decoding="async" /></a></p>
+    <p class="links"><a href="https://hivemind-web-rho.vercel.app">Website</a><a href="https://github.com/HermannPR/hivemind-chat-releases">Downloads</a><a href="../files/hivemind-promo-720p.mp4">Video (42 s)</a></p>
   </article>
   <article class="item">
     <div class="itemhead"><h3>Chécalo</h3><span class="meta">Founder · nutrition app for Mexico · in development</span><span class="dates">Sep 2026 to present</span></div>
